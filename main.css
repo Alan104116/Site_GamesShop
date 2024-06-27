@@ -1,0 +1,146 @@
+*{
+    margin: 0;                                                                                              /* Define a margem padrao como zero para todos os elementos */
+    padding: 0;                                                                                      /* Define o preenchimento padrao como zero para todos os elementos */
+    box-sizing: border-box;                                 /* Define a modelagem da caixa como "border-box" para incluir padding e border no tamanho total do elemento */
+}
+
+header,
+section h2,
+section h3,
+form button{
+    font-family: "Bungee", cursive;
+    font-weight: normal;
+}
+
+body, input, textarea{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    padding: 16px 0;                                                                        /* Adiciona preenchimento de 16 pixels no topo e na base do elemento header */
+    background-color: rgb(24, 24, 98);                                                                                    /* Define a cor de fundo do elemento header */
+    color: white;                                                                                      /* Define a cor do texto dentro do elemento header como branco */
+}
+
+header nav li{
+    display: inline;                                                              /* Faz com que os itens da lista de navegacao sejam exibidos em linha horizontalmente */
+    margin-left: 16px;                                                                   /* Adiciona uma margem a esquerda de 16 pixels aos itens da lista de navegacao */
+    font-size: 18px;                                                                        /* Define o tamanho da fonte dos itens da lista de navegacao como 24 pixels */
+}
+
+header nav li a{
+    color: white;                                                                            /* Define a cor do texto dos links dentro do elemento header como branco */
+    text-decoration: none;                                                                      /* Remove a decoracao de sublinhado dos links dentro do elemento header */
+    font-size: 18px;                                                                    /* Define o tamanho da fonte dos links dentro do elemento header como 18 pixels */
+}
+
+header li a:hover{
+    text-decoration: underline;                                      /* Adiciona um sublinhado aos links quando o cursor passa por cima deles dentro do elemento header */
+}
+
+.container{
+    max-width: 1280px;                                                                                         /* Define a largura maxima do conteiner como 1280 pixels */
+    width: 100%;                                                                                                             /* Define a largura do conteiner como 100% */
+    margin: 0 auto;                                                                                                 /* Centraliza o conteiner horizontalmente na pagina */
+}
+
+header .container,
+section .container{
+    display: flex;                                                                        /* Usa o modelo de layout flexivel para o conteiner dentro do elemento header */
+    align-items: center;                                                                                 /* Alinha os itens verticalmente ao centro dentro do conteiner */
+    justify-content: space-between;                                                             /* Distribui uniformemente os itens horizontalmente dentro do conteiner */
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+.brands-list img{
+    height: 24px;
+    margin-right: 16px;
+}
+
+.brands-list li{
+    display: inline;
+}
+
+section{
+    padding: 24px 0;
+    color: rgb(24, 24, 98);
+}
+
+section h2{
+    margin-bottom: 16px;   
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+.store-front{
+    margin-right: 32px;
+}
+
+.social-links img{
+    height: 24px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+#contact .container{
+    display: block;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+section h3{
+    margin-bottom: 16px;
+}
+
+form button{
+    background-color: rgb(24, 24, 98);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 32px;
+}
+
+form button:hover{
+    background-color: rgb(54, 54, 143);
+}
+
+input:focus, textarea:focus{
+    outline-color: rgb(24, 24, 98);
+}
+
+footer{
+    background-color: rgb(24, 24, 98);
+    color: white;
+    padding: 16px 0;
+}
